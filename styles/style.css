@@ -1,3 +1,19 @@
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -9,23 +25,351 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+.logo {
+  width: 228px;
+  height: 32px;
+}
+
 .header {
+  position: relative;
+  display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  padding-left: 64px;
   /* выше установили ограничения для секции */
+}
+
+.header__logo_place {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  background-image: url('/images/logo_place_header.svg');
+}
+
+.header__title {
+  align-self: center;
+  width: 730px;
+  z-index: 5;
+}
+
+.header__caption {
+  font-size: 102px;
+  font-weight: bold;
+  line-height: 96px;
+}
+
+.header__subtitle {
+  position: absolute;
+  width: 388px;
+  bottom: 30px;
+  z-index: 5;
+}
+
+.header__subtitle_text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.link_more {
+  text-decoration: none;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  position: absolute;
+  top: 0px;
+  right: 0px;
   height: 568px;
   width: 568px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  background-color: #4B76BA;
+  z-index: 0;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
+.header__image {
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+  right: 0;
+  width: 765px;
+  height: 608px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__brief {
+  width: 175px;
+}
+
+.two-columns__caption {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.two-columns__main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__main-text:last-of-type {
+  margin-bottom: 0;
+}
+
+.two-columns__paragraph {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  margin-left: 75px;
+  margin-bottom: 30px;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
+}
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.section-title {
+  text-align: center;
+  width: 60%;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+.section-subtitle {
+  text-align: center;
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1100px;
+}
+
+.table_cell {
+  width: 250px;
+  margin-bottom: 60px;
+}
+
+.table_cell:nth-of-type(n+5) {
+  margin-bottom: 0;
+}
+
+.table_cell_caption {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+.table_cell_paragraph {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.feynman {
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+  min-height: 767px;
+}
+
+.feynman__image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url("/images/feynman.png") no-repeat;
+  width: 867px;
+  height: 637px;
+  z-index: -1;
+}
+
+.feynman__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 5;
+}
+
+.feynman__title_caption {
+  width: 648px;
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1.15;
+  margin-bottom: 70px;
+  z-index: 5;
+}
+
+.feynman__subtitle_caption {
+  width: 648px;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  z-index: 5;
+}
+
+.feynman__link {
+  position: absolute;
+  left: 82%;
+  top: 39%;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  z-index: 5;
+}
+
+.kaufman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: black;
   color: white;
-  margin-right: 0;
+  overflow: hidden;
+  z-index: 1;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.kaufman__digits_table {
+  position: absolute;
+  right: -210px;
+  top: 0;
+  z-index: 0;
+  width: 877px;
+  height: 877px;
+  background: url('/images/kaufman-triangle.svg');
+}
+
+.table__theme_dark {
   margin-top: 80px;
+  margin-bottom: 90px;
+}
+
+.table_cell_theme_dark {
+  width: 200px;
+  margin-bottom: 80px;
+  z-index: 1;
+}
+
+.table_cell_theme_dark:nth-of-type(n+6) {
+  margin-bottom: 0;
+}
+
+.table_cell_paragraph_theme_dark {
+  margin: 20px 0 0 0;
+}
+
+.footer {
+  display: flex;
+  min-height: 350px;
+  background-color: black;
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer__logo_place {
+  background: url('/images/logo_place_footer.svg');
+  width: 228px;
+  height: 32px;
+}
+
+.footer__columns {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
+.footer__author {
+  margin: 18px 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.footer__column_content-link {
+  display: flex;
+  flex-basis: 711px;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.footer__column_content_info {
+  margin-right: 200px;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_heading,
+.footer__column_content_social {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.footer__column-links,
+.social_link {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  color: white;
+}
+
+.footer__column-links:first-of-type,
+.social_link:first-of-type {
+  margin-top: 20px;
+}
+
+.footer__column-links:last-of-type,
+.social_link:last-of-type {
+  margin-bottom: 16px;
 }
