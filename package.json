@@ -1,0 +1,25 @@
+{
+  "name": "how-to-learn",
+  "version": "1.0.0",
+  "description": "# how-to-learn DEMO: [Научиться учиться](https://yauheni5.github.io/how-to-learn/)",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.18.7",
+    "pkg": "^3.0.0-beta.25"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "build": "^0.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Yauheni5/how-to-learn)"
+  },
+  "author": "Yauheni Asheichyk",
+  "license": "ISC"
+}
