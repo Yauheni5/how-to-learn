@@ -37,6 +37,7 @@ a {
   min-height: 600px;
   max-height: 756px;
   padding-left: 64px;
+  background-color: #f2f2f2;
   /* выше установили ограничения для секции */
 }
 
@@ -207,6 +208,7 @@ a {
   position: relative;
   z-index: 1;
   min-height: 767px;
+  background-color: #f2f2f2;
 }
 
 .feynman__image {
