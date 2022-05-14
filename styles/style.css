@@ -44,7 +44,7 @@ a {
   position: absolute;
   top: 30px;
   left: 64px;
-  background-image: url('/images/logo_place_header.svg');
+  background-image: url('../images/logo_place_header.svg');
 }
 
 .header__title {
@@ -74,6 +74,7 @@ a {
 
 .link_more {
   text-decoration: none;
+  color: #2f80ed
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -86,7 +87,7 @@ a {
   font-size: 18px;
   font-weight: normal;
   line-height: 25px;
-  background-color: #4B76BA;
+  background-color: #2f80ed ;
   z-index: 0;
 }
 
@@ -212,7 +213,7 @@ a {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url("/images/feynman.png") no-repeat;
+  background: url('../images/feynman.png') no-repeat;
   width: 867px;
   height: 637px;
   z-index: -1;
@@ -246,8 +247,8 @@ a {
 
 .feynman__link {
   position: absolute;
-  left: 82%;
-  top: 39%;
+  right: 48px;
+  top: 50%;
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
@@ -259,7 +260,7 @@ a {
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-color: black;
+  background-color: #1f1f1f;
   color: white;
   overflow: hidden;
   z-index: 1;
@@ -274,7 +275,7 @@ a {
   z-index: 0;
   width: 877px;
   height: 877px;
-  background: url('/images/kaufman-triangle.svg');
+  background: url('../images/kaufman-triangle.svg');
 }
 
 .table__theme_dark {
@@ -299,14 +300,14 @@ a {
 .footer {
   display: flex;
   min-height: 350px;
-  background-color: black;
+  background-color: #1f1f1f;
   color: white;
   padding-top: 60px;
   padding-bottom: 40px;
 }
 
 .footer__logo_place {
-  background: url('/images/logo_place_footer.svg');
+  background: url('../images/logo_place_footer.svg');
   width: 228px;
   height: 32px;
 }
