@@ -1,0 +1,14 @@
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.footer__column-links:first-of-type {
+  margin-top: 20px;
+}
+
+.footer__column-links:last-of-type {
+  margin-bottom: 16px;
+}

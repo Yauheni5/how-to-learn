@@ -1,0 +1,13 @@
+@import url(/blocks/table/__cell/table__cell.css);
+@import url(/blocks/table/__heading/table__heading.css);
+@import url(/blocks/table/__text/table__text.css);
+@import url(/blocks/table/__cell/theme/table__cell_theme_dark.css);
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1100px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
