@@ -1,0 +1,7 @@
+@import url(../resources/__logo-zone/resources__logo-zone.css);
+@import url(../resources/__logo/resources__logo.css);
+
+.resources {
+  padding-top: 100px;
+  background-color: #f2f2f2;
+}

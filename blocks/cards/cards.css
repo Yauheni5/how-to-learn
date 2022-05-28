@@ -1,7 +1,7 @@
-@import url(/blocks/cards/__description/cards__description.css);
-@import url(/blocks/cards/__image/cards__image.css);
-@import url(/blocks/cards/__item/cards__item.css);
-@import url(/blocks/cards/__title/cards__title.css);
+@import url(../cards/__description/cards__description.css);
+@import url(../cards/__image/cards__image.css);
+@import url(../cards/__item/cards__item.css);
+@import url(../cards/__title/cards__title.css);
 
 .cards {
   width: 920px;
