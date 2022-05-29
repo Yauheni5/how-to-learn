@@ -5,7 +5,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  min-height: 890px;
+  height: 890px;
   background: no-repeat url('../../images/feynman.png') 0 100%/867px 637px;
   background-color: #f2f2f2;
+  box-sizing: border-box;
 }
