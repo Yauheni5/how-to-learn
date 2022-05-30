@@ -3,7 +3,7 @@
   color: #2f80ed;
   display: inline-block;
   vertical-align: top;
-  transition: opacity 1s linear 2s;
+  transition: opacity linear 1s;
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
