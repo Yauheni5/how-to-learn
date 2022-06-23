@@ -1,4 +1,4 @@
-# how-to-learn
+# [how-to-learn](https://yauheni5.github.io/how-to-learn/index.html)
 
 ## Проектная работа
 
